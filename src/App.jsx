@@ -5,6 +5,7 @@ export default function App() {
   const [dogImage, setDogImage] = useState('');
   const [loading, setLoading] = useState(true);
 
+  
   useEffect(() => {
     fetch('https://dog.ceo/api/breeds/image/random')
       .then((response) => response.json())
